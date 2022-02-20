@@ -1,0 +1,29 @@
+{
+  "name": "my-mvc-tech-blog-app",
+  "version": "1.0.0",
+  "description": "Tech Blog application to post comments on tech subjects. Done using Model-View-Controller (MVC) architectural pattern.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/josevidmal/my-mvc-tech-blog-app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/josevidmal/my-mvc-tech-blog-app/issues"
+  },
+  "homepage": "https://github.com/josevidmal/my-mvc-tech-blog-app#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "connect-session-sequelize": "^7.1.2",
+    "dotenv": "^16.0.0",
+    "express-handlebars": "^6.0.2",
+    "express-session": "^1.17.2",
+    "mysql2": "^2.3.3",
+    "sequelize": "^6.16.2"
+  }
+}
