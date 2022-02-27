@@ -1,0 +1,12 @@
+{{> post-details}}
+{{#if logged_in}}
+<section class="comment">
+    <div>
+    </div>
+    <form class="forms" id="comment-form">
+        <label for="post-comment">Comment</label>
+        <textarea class="textarea" id="post-comment"></textarea>
+        <button class="btns" id="submit-btn" type="submit">Submit</button>
+    </form>
+</section>
+{{/if}}
