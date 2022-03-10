@@ -5,6 +5,10 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+body {
+    background-color: silver;
+}
+
 header {
     background-color: rgb(0, 44, 126);
     height: 155px;
@@ -54,20 +58,20 @@ main {
     height: 800px;
 }
 
-.post {
+.post, .comment {
     border: 5px solid rgb(0, 44, 126);
     background-color: silver; 
     height: 150px;
     margin: 0% 0% 1% 0%;
 }
 
-.post .title {
+.post .title, .comment .title {
     background-color:rgb(0, 44, 126);
     color: silver;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 40px;
+    height: 50px;
     padding: 0.5% 1.5%;
 }
 
@@ -75,7 +79,7 @@ main {
     color: silver;
 }
 
-.post .content {
+.post .content, .comment .content {
     color:rgb(0, 44, 126);
     padding: 2% 1.5%;
     font-size: 18px;
@@ -135,18 +139,26 @@ main {
     color:rgb(0, 44, 126);
 }
 
-.comment {
+.comment, .new-post {
     border: 5px solid rgb(0, 44, 126);
     background-color: silver;
-    height: 350px;
+    height: 300px;
 }
 
-.comment div {
+#comment-input {
+    height: 375px;
+}
+
+.new-post {
+    height: 475px;
+}
+
+.comment .title {
     background-color:rgb(0, 44, 126);
     height: 40px;
 }
 
-#post-comment {
+#post-comment, #post-content {
     height: 170px;
     width: 100%;
     font-size: 18px;
@@ -155,7 +167,7 @@ main {
     border: solid rgb(0, 44, 126);
 }
 
-#post-comment:focus {
+#post-comment:focus, #post-title:focus, #post-content:focus {
     outline: 2.5px solid lightgreen;
     border: 2.5px solid lightgreen;
 }
@@ -171,4 +183,8 @@ main {
     position: relative;
     top: 520px;
     left: 610px;
+}
+
+#new-post-btn {
+    cursor: pointer;
 }

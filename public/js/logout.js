@@ -12,3 +12,7 @@ const logout = async () => {
 };
 
 document.querySelector('#logout').addEventListener('click', logout);
+
+if (!!document.getElementById('post-btn')) {
+    document.getElementById('blog-title').innerText = 'Your Dashboard';
+}

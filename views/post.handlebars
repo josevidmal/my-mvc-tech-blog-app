@@ -1,12 +1,14 @@
 {{> post-details}}
 {{#if logged_in}}
-<section class="comment">
-    <div>
+<section class="comment" id="comment-input">
+    <div class="title">
     </div>
     <form class="forms" id="comment-form">
         <label for="post-comment">Comment</label>
-        <textarea class="textarea" id="post-comment"></textarea>
+        <textarea class="textarea" id="post-comment" name="post-comment"></textarea>
         <button class="btns" id="submit-btn" type="submit">Submit</button>
     </form>
 </section>
 {{/if}}
+
+<script src="/js/createComment.js"></script>
