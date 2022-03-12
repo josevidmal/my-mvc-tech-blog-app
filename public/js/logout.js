@@ -13,6 +13,6 @@ const logout = async () => {
 
 document.querySelector('#logout').addEventListener('click', logout);
 
-if (!!document.getElementById('new-post-btn')) {
+if (!!document.getElementById('new-post-btn') || !!document.getElementById('update-btn')) {
     document.getElementById('blog-title').innerText = 'Your Dashboard';
 }
