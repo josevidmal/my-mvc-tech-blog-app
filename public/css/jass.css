@@ -45,7 +45,7 @@ nav ul li {
     color:rgb(0, 44, 126);
 } 
 
-.nav-links:visited, .nav-links:active {
+.nav-links:visited, .nav-links:active, .nav-links:focus, .nav-links:link {
     color: silver;
 }
 

@@ -15,7 +15,9 @@ Now, while doing the previous part, I also created the auth.js and helpers.js fi
 
 The final part was to create all the Views, starting with the main.handlebars file, containing the &lt;header&gt; and &lt;nav&gt; links. For this part I also created the post-details.handlebars and comment-details.handlebars files in views/partials, to use them in other views like homepage.handlebars and PostComments.handlebars. At the same time of this process, I wrote several .js files in public/js, to give specific functionalities to different views with certain buttons. 
 
-## Usage
+## Usage and [Deployed Application Link](https://my-mvc-tech-blog-app.herokuapp.com/)
+
+The link to the deployed application is this: https://my-mvc-tech-blog-app.herokuapp.com/
 
 The application looks like this when it is used:
 
