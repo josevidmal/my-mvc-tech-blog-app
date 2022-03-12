@@ -31,13 +31,29 @@ router.post('/:id/comments', withAuth, async (req, res) => {
 });
 
 router.put('/:id/update', withAuth, async (req, res) => {
-    const postData = await Post.update({
-        where: {
-            id: req.params.id,
-            user_id: req.session.user_id,
+    try {
+        const postData = await Post.update({
+            title: req.body.title,
+            content: req.body.content,
         },
-    });
-})
+        {
+            where: {
+                id: req.params.id,
+                user_id: req.session.user_id,
+            },
+        }
+    );
+
+        if (!postData) {
+            res.status(404).json({ message: 'Post not found with such id' });
+            return;
+        }
+
+        res.status(200).json(postData);
+    } catch (err) {
+        res.status(500).json(err);
+    }
+});
 
 router.delete('/:id/delete', withAuth, async (req, res) => {
     try {

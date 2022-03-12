@@ -1,0 +1,17 @@
+{{#if logged_in}}
+<section class="modify-post">
+    <div class="form-title">
+        <h2>Edit Post</h2>
+    </div>
+    <form class="forms" id="edit-post-form">
+        <label for="post-title">Title</label>
+        <input class="form-input" type="text" id="post-title" value="{{title}}"/>
+        <label for="post-content">Content</label>
+        <textarea class="textarea" id="post-content" name="post-content">{{content}}</textarea>
+        <button class="btns" id="update-btn" type="submit">Update</button>
+        <button class="btns" id="delete-btn" type="button">Delete</button>
+    </form>
+</section>
+{{/if}}
+
+<script src="/js/modifyPost.js"></script>

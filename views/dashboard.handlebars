@@ -1,5 +1,8 @@
 {{#each posts as |post|}}
-<a href=""><button class="btns" id="post-btn" type="button"><span>{{title}}</span><span>{{format_date date_created}}</span></button></a>
+<a class="post-btns" href="/post/{{id}}/modify">
+    <h2 class="post-btns-title">{{title}}</h2>
+    <h2 class="post-btns-date">{{format_date date_created}}</h2>
+</a>
 {{/each}}
 
 <a href="/createPost"><button id="new-post-btn">+ New Post</button></a>

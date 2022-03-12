@@ -33,11 +33,12 @@ nav ul li {
 #blog-title {
     background-color: silver;
     color: rgb(0, 44, 126);
-    width: 20%;
-    margin: 1% 1% 1% 0%;
+    width: 25%;
+    margin: 2% 1% 1% 0%;
     padding: 0.5% 0.5%;
     border-radius: 10px;
     box-shadow: 6px 6px gray;
+    text-align: center;
 }
 
 #blog-title a:visited, #blog-title a:active {
@@ -75,7 +76,7 @@ main {
     padding: 0.5% 1.5%;
 }
 
-.post .title h2 a:visited, .post .title h2 a:active {
+#post-title-link:visited, #post-title-link:active, #post-title-link:focus, #post-title-link:link {
     color: silver;
 }
 
@@ -119,7 +120,7 @@ main {
     padding: 0% 1.5%;
 }
 
-.forms .btns {
+.forms .btns, .post-btns {
     display: block;
     margin: 0.5% 0%;
     height: 50px;
@@ -131,7 +132,7 @@ main {
     font-size: 20px;
 }
 
-.forms .btns:hover {
+.forms .btns:hover, .post-btns:hover {
     cursor: pointer;
 }
 
@@ -139,7 +140,21 @@ main {
     color:rgb(0, 44, 126);
 }
 
-.comment, .new-post {
+.post-btns {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5% 1.5%;
+    font-size: 15px;
+    background-color: black;
+    color: silver;
+}
+
+.post-btns:visited, .post-btns:active {
+    color: silver;
+}
+
+.comment, .new-post, .modify-post {
     border: 5px solid rgb(0, 44, 126);
     background-color: silver;
     height: 300px;
@@ -151,6 +166,10 @@ main {
 
 .new-post {
     height: 475px;
+}
+
+.modify-post {
+    height: 525px;
 }
 
 .comment .title {
@@ -181,7 +200,7 @@ main {
     border-radius: 10px;
     font-size: 20px;
     position: relative;
-    top: 520px;
+    top: 475px;
     left: 610px;
 }
 
